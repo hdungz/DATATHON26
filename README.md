@@ -38,7 +38,7 @@ Datathon26/
 
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn plotly \
-            statsmodels prophet lightgbm xgboost jupyter
+            lightgbm xgboost shap jupyter
 ```
 
 ---
