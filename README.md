@@ -57,9 +57,7 @@ Trong Kaggle Notebook, click **+ Add data** ở góc phải và thêm dataset sa
 
 | Notebook | Dataset cần thêm | Loại |
 |---|---|---|
-| `datathon26.ipynb` | `datathon-2026-round-1` | Competition Data |
-| `notebookmcq.ipynb` | `datathon-2026-round-1` | Competition Data |
-| `eda-datathon-final.ipynb` | `dungz878/datathon2026` | Dataset |
+| Cả 3 notebook (`datathon26.ipynb`, `notebookmcq.ipynb`, `eda-datathon-final.ipynb`) | `datathon-2026-round-1` | Competition Data |
 
 ### Bước 3 – Chạy
 
@@ -91,7 +89,7 @@ DATA_DIR = 'datathon-2026-round-1/'
 **Đối với `eda-datathon-final.ipynb`:**
 ```python
 # Đổi từ:
-base_path = "/kaggle/input/datasets/dungz878/datathon2026/"
+base_path = "/kaggle/input/competitions/datathon-2026-round-1/"
 # Thành:
 base_path = "datathon-2026-round-1/"
 ```
