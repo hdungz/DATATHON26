@@ -18,11 +18,11 @@ Datathon26/
 │   ├── inventory.csv
 │   ├── geography.csv
 │   ├── shipments.csv
-│   └── web_traffic.csv
+│   └── web_traffic.csv 
 │
-├── datathon26-ec9819.ipynb      ← Notebook dự đoán chính (mô hình LTSF)
-├── eda-datathon-final.ipynb     ← Notebook EDA toàn diện
-├── notebookmcq.ipynb            ← Notebook giải câu hỏi trắc nghiệm (MCQ)
+├── datathon26-ec9819.ipynb <-> Mô hình   
+├── eda-datathon-final.ipynb <-> EDA  
+├── notebookmcq.ipynb <-> MCQ  
 └── README.md
 ```
 
@@ -96,8 +96,49 @@ jupyter notebook notebookmcq.ipynb
 
 ---
 
+## Chạy trên Kaggle
+
+### Bước 1 – Upload notebook
+
+Vào [kaggle.com/code](https://www.kaggle.com/code) → **New Notebook** → Import file `.ipynb` cần chạy.
+
+### Bước 2 – Thêm dataset
+
+Trong Kaggle Notebook, click **+ Add data** ở góc phải và thêm dataset tương ứng:
+
+| Notebook | Dataset cần thêm | Loại |
+|---|---|---|
+| `datathon26-ec9819.ipynb` | `datathon-2026-round-1` | Competition Data |
+| `notebookmcq.ipynb` | `datathon-2026-round-1` | Competition Data |
+| `eda-datathon-final.ipynb` | `dungz878/datathon2026` | Dataset |
+
+### Bước 3 – Đổi path trong notebook
+
+Sau khi thêm dataset, sửa biến path ở cell đầu tiên:
+
+**`datathon26-ec9819.ipynb` và `notebookmcq.ipynb`:**
+```python
+# Đổi từ:
+DATA_DIR = 'datathon-2026-round-1/'
+# Thành:
+DATA_DIR = '/kaggle/input/competitions/datathon-2026-round-1/'
+```
+
+**`eda-datathon-final.ipynb`:**
+```python
+# Đổi từ:
+base_path = "datathon-2026-round-1/"
+# Thành:
+base_path = "/kaggle/input/datasets/dungz878/datathon2026/"
+```
+
+### Bước 4 – Chạy
+
+**Run All** → Kết quả `submission.csv` sẽ xuất hiện trong tab **Output** của Kaggle.
+
+---
+
 ## Ghi chú
 
 - Tất cả notebook đã được cập nhật path trỏ về thư mục local `datathon-2026-round-1/`.
-- Để chạy lại trên Kaggle, đổi path về `/kaggle/input/competitions/datathon-2026-round-1/` (notebook dự đoán & MCQ) hoặc `/kaggle/input/datasets/dungz878/datathon2026/` (EDA notebook).
 - File `submission.csv` sẽ được tạo tại thư mục gốc sau khi chạy `datathon26-ec9819.ipynb`.
