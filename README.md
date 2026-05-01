@@ -53,7 +53,7 @@ Vào [kaggle.com/code](https://www.kaggle.com/code) → **New Notebook** → Imp
 
 ### Bước 2 – Thêm dataset
 
-Trong Kaggle Notebook, click **+ Add data** ở góc phải và thêm dataset sau (tuỳ vào notebook):
+Trong Kaggle Notebook, click **+ Add data** ở góc phải và thêm dataset sau (nếu chưa có):
 
 | Notebook | Dataset cần thêm | Loại |
 |---|---|---|
